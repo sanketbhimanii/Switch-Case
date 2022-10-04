@@ -15,9 +15,9 @@
 
         // 4. data types in JavaScript  
         // numbers
-        var num1 = 455;
+        var num1 = 455; 
         var num2 = 451;
-        
+
 
         // string
         var str1 = "This is String";
