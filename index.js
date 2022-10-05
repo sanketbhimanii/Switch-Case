@@ -90,7 +90,7 @@
         console.log(!false)
         console.log(!true)
 
-        // 5.functions in java 
+        // 6.functions in js
         function avg(a,b){
             c=(a+b)/2
             return c
