@@ -15,8 +15,9 @@
 
         // 4. data types in JavaScript  
         // numbers
-        var num1 = 455;
+        var num1 = 455; 
         var num2 = 451;
+
 
         // string
         var str1 = "This is String";
@@ -43,7 +44,5 @@
         console.log(n)
 
         // arrey
-        var arr=[1,2,3,4,5,6,7,8,9,0]
-
-        
-
+        var arr=[1,2,3,4,5,6,7,8,9,0] 
+        var arr=[20,10]        
