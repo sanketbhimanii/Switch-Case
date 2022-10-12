@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codding</title>
+</head>
+
+<body>
+    <h1>
+        - If statement. <br> 
+        - Else statemant. <br>
+        - Type Conversion. <br>
+        - Type coercion <br>
+
+
+    </h1>
+    <script>
+        // const massSant =70;
+        // const hightSant = 165 ;
+        // const massJay = 75;
+        // const hightJay = 169 ;
+
+        const massSant = 50;
+        const hightSant = 170;
+        const massJay = 75;
+        const hightJay = 169;
+
+        const bmiSant = massSant / hightSant ** 2;
+        const bmiJay = massJay / hightJay ** 2;
+        console.log(bmiSant, bmiJay);
+
+        if (bmiSant > bmiJay) {
+            console.log(`Sant's bmi(${bmiSant}) is higher than Jay(${bmiJay})`);
+        }
+        else {
+            console.log(`Jay's bmi(${bmiJay}) is higher than Sant(${bmiSant})`);
+        }
+
+        let date = String(new Date());
+        console.log(date, (typeof date));
+
+        //type conversion 
+        const inputYear = '2000';
+        console.log(Number(inputYear));
+        console.log(Number(inputYear) + 22);
+
+        //type coercion
+        console.log('i am ' + 23 + ' year old ');
+        console.log('23' - '10' - '3');
+        console.log('23' * '2');
+        console.log('23' > '10');
+
+        let n = '1' + 1; //'11'
+        n = n - 1;
+        console.log(n);
+
+        //  Streing to number Conversion
+        let sum = 10 + '20';
+        let sum1 = '20' + 10;
+
+        // The Boolean value true is converted to string 'true' and then '+' concatenates both the strings
+
+        var result = true + '10';
+        console.log(sum);
+        console.log(sum1);
+       
+
+        // String to number Conversion
+
+        let w = 10 - '5';
+        let x = 10 * '5';
+        let y = 10 % '5';
+        let z = 10 / '5';
+
+        console.log(w);
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        // Boolean to Number
+         let m = true + 1;
+         let o = false + 2;
+
+         console.log(m);
+         console.log(o);
+
+        //  The equality operator
+
+        let p = (10 =="10");
+        let q = (true == 1);
+        let r = (true == "true");
+
+        console.log(x);
+        console.log(y);
+        console.log(z);   
+ 
+
+
+
+
+    </script>
+</body>
+
+</html>
