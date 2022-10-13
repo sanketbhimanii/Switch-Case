@@ -10,7 +10,7 @@
 
 <body>
     <h1>
-        - If statement. <br> 
+        - If statement. <br>
         - Else statemant. <br>
         - Type Conversion. <br>
         - Type coercion <br>
@@ -18,6 +18,8 @@
 
     </h1>
     <script>
+        "use strict";
+        
         // const massSant =70;
         // const hightSant = 165 ;
         // const massJay = 75;
@@ -32,7 +34,7 @@
         const bmiJay = massJay / hightJay ** 2;
         console.log(bmiSant, bmiJay);
 
-        if (bmiSant > bmiJay) {
+        if(bmiSant > bmiJay) {
             console.log(`Sant's bmi(${bmiSant}) is higher than Jay(${bmiJay})`);
         }
         else {
@@ -66,7 +68,7 @@
         var result = true + '10';
         console.log(sum);
         console.log(sum1);
-       
+
 
         // String to number Conversion
 
@@ -81,24 +83,102 @@
         console.log(z);
 
         // Boolean to Number
-         let m = true + 1;
-         let o = false + 2;
+        let m = true + 1;
+        let o = false + 2;
 
-         console.log(m);
-         console.log(o);
+        console.log(m);
+        console.log(o);
 
         //  The equality operator
 
-        let p = (10 =="10");
+        let p = (10 == "10");
         let q = (true == 1);
         let r = (true == "true");
 
         console.log(x);
         console.log(y);
-        console.log(z);   
-
+        console.log(z);
         
- 
+        // Switch 
+        const fruits = 'Apple';
+
+        switch (fruits) {
+            case 'Bananas':
+                console.log('40 Rs per 12 pices!');
+                break;
+
+            case 'orange':
+                console.log('40 Rs per Kg!');
+                break;
+
+            case 'Watermalon':
+                console.log('30 Rs. per Kg!');
+                break;
+
+            case 'Strawberry':
+                console.log('60 Rs per 12 pices!');
+                break;
+
+            case 'Mangoes':
+                console.log('120 Rs per kg!');
+                break;
+
+            default:
+                console.log('Fruites out of Stock');
+        }
+
+        const foo = 10;
+        let output = 'Output: ';
+        switch (foo) {
+            case 0:
+                output += 'So ';
+            case 1:
+                output += 'What ';
+                output += 'Is ';
+            case 2:
+                output += 'Your ';
+            case 3:
+                output += 'Name';
+            case 4:
+                output += '?';
+                console.log(output);
+                break;
+            case 5:
+                output += '!';
+                console.log(output);
+                break;
+            default:
+                console.log('Please pick a number from 0 to 5!');
+        }
+
+        // FUNCTION
+
+        function intern(fname,lname){
+            console.log('exhibyte '+''+' solution');
+        }
+        intern("fname","lname");
+        function value(a,b){
+            console.log(a+b);
+            console.log(a-b);
+            console.log(a*b);
+            console.log(a/b);
+        }
+        value(10,20);
+        value(10,20);
+        value(10,20);
+        value(10,20);
+      
+        
+
+
+       
+    
+
+
+
+
+
+
 
 
 
