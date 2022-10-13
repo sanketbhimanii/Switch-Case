@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Change</title>
+
+    <style>
+      .red{
+        width: 20em;
+        height: 5em;
+        color: rgb(36, 14, 14);
+        background-color: rgb(245, 70, 70);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        box-sizing: border-box;
+        border: 2px solid rgb(2, 2, 2);
+      }
+
+      .pink{
+        width: 20em;
+        height: 5em;
+        color: rgb(36, 14, 33);
+        background-color: rgb(239, 70, 245);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        box-sizing: border-box;
+        border: 2px solid rgb(2, 2, 2);
+      }
+
+      .green{
+        width: 20em;
+        height: 5em;
+        color: rgb(21, 36, 14);
+        background-color: rgb(70, 245, 93);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        box-sizing: border-box;
+        border: 2px solid rgb(2, 2, 2);
+      }
+
+      .yellow{
+        width: 20em;
+        height: 5em;
+        color: rgb(36, 36, 14);
+        background-color: rgb(233, 245, 70);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        box-sizing: border-box;
+        border: 2px solid rgb(2, 2, 2);
+      }
+
+      .blue{
+        width: 20em;
+        height: 5em;
+        color: rgb(15, 14, 36);
+        background-color: rgb(70, 152, 245);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        box-sizing: border-box;
+        border: 2px solid rgb(2, 2, 2);
+      }
+      
+    </style>
+
+</head>
+
+<body>
+    <script>
+
+        "use strict";
+
+        function Change(id) {
+            switch (id) {
+                case '1':
+                    document.body.bgColor = "red";
+                    break;
+
+                case '2':
+                    document.body.bgColor = "green";
+                    break;
+
+                case '3':
+                    document.body.bgColor = "yellow";
+                    break;
+
+                case '4':
+                    document.body.bgColor = "blue";
+                    break;
+
+                case '5':
+                    document.body.bgColor = "pink";
+                    break;
+
+
+
+            }
+        }
+    </script>
+
+    <table>
+        <tr>
+            <td> <input class="red" type="button" id="1" onclick="Change(this.id)" value="Red" /></td>
+        </tr>
+        <tr>
+            <td><input class="green" type="button" id="2" onclick="Change(this.id)" value="Green" /></td>
+        </tr>
+        <tr>
+            <td><input class="yellow" type="button" id="3" onclick="Change(this.id)" value="Yellow" /></td>
+        </tr>
+        <tr>
+            <td> <input class="blue" type="button" id="4" onclick="Change(this.id)" value="Blue" /></td>
+        </tr>
+        <tr>
+            <td><input class="pink" type="button" id="5" onclick="Change(this.id)" value="Pink" /></td>
+        </tr>
+
+
+
+
+
+    </table>
+
+    
+
+
+
+
+
+
+
+</body>
+    
+</html>
