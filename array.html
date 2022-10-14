@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in js</title>
+</head>
+
+<body>
+    <script>
+        const num = new Array(10, 20, 30, 40, 50, 60, 70);
+
+        // push opeation
+        num.push(80);
+
+        //    unshift operation
+        num.unshift(00);
+
+        // pop operation
+        num.pop();
+
+        // shift operation
+        num.shift();
+
+        // change index
+        num[0] = 'exhibyte';
+
+        const names = ['sanket', 'vrushabh', 'rajesh', 'chirag', 'umang'];
+
+        // indexof mathod
+        names.indexOf('rajesh');
+
+        // LastIndexof 
+        names.lastIndexOf('umang');
+
+        //includes
+        names.includes();
+
+        // concate 
+        // name1.concat(name2)
+
+        let name1 = ['sanket', 'vrushabh', 'rajesh'];
+        let name2 = ['chirag', 'umang', 'aman'];
+        // console.log(name1.concat(name2));
+
+        // slice
+        // let name1 = ['sanket', 'vrushabh', 'rajesh' ]; 
+        // let name2 = ['chirag', 'umang','aman'];
+        // let name3= name1.concat(name2)
+        // console.log(name3.slice(3,5));
+
+        // spread operator
+        let name3 = [...name1, ...name2]
+        console.log(name3);
+
+        // jon
+        let student=['s','h','i','v'];
+        student=student.join( '_');
+
+        //split
+        console.log(student.split('_')) ;   
+
+        // filter
+
+    let cities = [
+        {name:'mumbai', population:3216542},
+        {nmae:'delhi', population:1478527},
+        {nmae:'bangalore', population:2589251},
+        {nmae:'chennai', population:3579521},
+        {nmae:'Lucknow', population:7541252},
+        
+    ];
+    // console.log(cities.filter(city =>city.population>3000000))
+    console.log(cities.map(city =>city.population*2))
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
