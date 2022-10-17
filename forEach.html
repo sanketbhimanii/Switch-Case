@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        const food = [
+        let food = [
             {
                 type: "south indian",
                 time: "morning breakfat",
@@ -24,13 +24,11 @@
         ]
 
 
-            food.forEach((type,time) => {
-                console.log(time);
-                console.log(type);
-              });
+        food.forEach(function(type){
+            console.log(type);
+           })
  
         
-     
     </script>
 </body>
 
