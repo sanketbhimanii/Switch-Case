@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array mathod</title>
+</head>
+
+<body>
+    <script>
+        // sort() & reverse()
+        let a = ['sanket', 'utsav', 'jay', 'prit', 'nishant'];
+        document.write(a + '<br>');
+        a.sort();
+        document.write(a + '<br>');
+        a.reverse();
+        document.write(a + '<br>');
+
+        //POP() & PUSH() 
+        let b = ['sanket', 'utsav', 'jay', 'prit', 'nishant'];
+        document.write(b + '<br>');
+        b.pop();
+        document.write(b + '<br>');
+        b.push("vimal", "herin");
+        document.write(b + '<br>');
+
+        // Shift() & Unshift()
+        let c = ['sanket', 'utsav', 'jay', 'prit', 'nishant'];
+        document.write(c + '<br>');
+        c.shift();
+        document.write(c + '<br>');
+        c.unshift("rohan");
+        document.write(c + '<br>');
+
+        // CONCAT() & JOIN()
+        let aa = ['hari','priya'];
+        let bb = ['pushti','vrund'];
+        let cc = aa.concat(bb);
+        document.write(cc + "<br><br>");
+        var d = cc.join("/");
+        document.write(d + "<br><br>");
+         
+        //  SLICE() & SPLICE()
+         let ab = ['sanket', 'utsav', 'jay', 'prit', 'nishant','manthan','rahul'];
+         document.write(ab + "<br><br>");
+        
+        let bd = ab.slice(2,6);
+        document.write(bd + "<br><br>"); 
+        
+        ab.splice(3,5,"rahul","parijat");
+        document.write(ab + "<br><br>");
+
+        //MAP ()
+        
+        let ary = [10,20,30,40];
+        let rst = ary.map(demo);
+        document.write(rst);
+
+
+        function demo(x){
+            return x*10 ;
+        }
+        
+
+    </script>
+</body>
+
+</html>
