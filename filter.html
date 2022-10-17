@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+
+<body>
+    <script>
+        var Students = [{
+            
+                "name": "Raj",
+                "Age": "15",
+                "RollNumber": "123",
+                "Marks": "99",
+
+            },
+            
+            {
+                "name": "Aman",
+                "Age": "14",
+                "RollNumber": "223",
+                "Marks": "69",
+            },
+            {
+                "name": "Vivek",
+                "Age": "13",
+                "RollNumber": "253",
+                "Marks": "89",
+            
+        },
+    ]
+        
+
+        var newArray = Students.filter(function (s1) {
+            return s1.Age >= 15 &&
+                s1.RollNumber <= 200 &&
+                s1.Marks >= 80;
+        }
+        );
+        console.log(newArray);
+    </script>
+</body>
+
+</html>

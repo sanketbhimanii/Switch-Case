@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+
+<body>
+    <script>
+        let person = [
+        { id: 1, name: 'pushti' },
+        { id: 2, name: 'kunj' },
+        { id: 3, name: 'vrund' }]
+
+    let rslt = person.map(person=>({ value:person.id,text:person.name
+    }))
+
+    console.log(rslt);
+
+
+
+    let ary = [10,20,30,40];
+    let rst = ary.map(demo);
+    document.write(rst);
+    
+    function multi  (x){
+    return x*10 ;
+    }
+        
+
+    </script>
+</body>
+
+</html>
