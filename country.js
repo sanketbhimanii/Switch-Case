@@ -35,11 +35,13 @@ countries.forEach(function (lrg) {
 });
 
 const myFunction =()=>  countries.filter((a1) => {
-    return a1.population > 12;
+    document.getElementById('btn').innerHTML = a1.population > 12;
+    // return 
 });
+
 console.log("filter", myFunction());
 
 let map = countries.map(function (a1) {
-  return a1.growthrate <= 0.5;
+return a1.growthrate <= 0.5;
 });
 console.log(map);
