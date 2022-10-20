@@ -21,31 +21,45 @@ const countries = [
   },
 ];
 
-// for (var a = countries.length; a >= 0; a--) {
-//   countries.sort();
-//   console.log(countries[a]);
-// }
+for (var a = countries.length; a >= 0; a--) {
+  countries.sort();
+  console.log(countries[a]);
+}
 
-// for (var a=countries.length; a<=0; a++) {
+for (var a=countries.length; a<=0; a++) {
   countries.reverse();
   console.log(countries);
-// }
+}
 
 
-// const abc = countries.filter((ab) => {
-//   return ab.population >= 10;
-// });
-// console.log("filter", abc);
+const abc = countries.filter((ab) => {
+  return ab.population >= 10;
+});
+console.log("filter", abc);
 
-// abc.sort((a, b) => (a.name > b.name ? 1 : -1));
-// console.log("sort", abc);
+abc.sort((a, b) => (a.name > b.name ? 1 : -1));
+console.log("sort", abc);
 
-// const xyz = countries.filter((ab) => {
-//   return ab.growthrate >=2;
-// });
-// console.log("filter", xyz);
+const xyz = countries.filter((ab) => {
+  return ab.growthrate >=2;
+});
+console.log("filter", xyz);
 
-// xyz.sort((e, f) => (e.growthrate < f.growthrate ? 1 : -1));
-// console.log("sort", xyz); 
+xyz.sort((e, f) => (e.growthrate < f.growthrate ? 1 : -1));
+console.log("sort", xyz); 
 
- 
+alert("I am dveloper");
+console.log(alert("good evening"))
+
+
+var txt
+ if (confirm("Press a button!")) {
+   txt = "You pressed OK!";
+ } else {
+   txt = "You pressed Cancel!";
+ }
+ console.log(txt)
+
+ let z = prompt("what is your age"); 
+ console.log (z)
+  
