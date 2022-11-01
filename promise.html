@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise</title>
+  </head>
+  <body>
+    <!-- <script>
+      let complate = true;
+
+      let prom = new Promise(function (resolve, reject) {
+        if (complate) {
+          resolve("im done !");
+        } else {
+          reject("im not done !!");
+        }
+      });
+    //   console.log(prom);
+    </script> -->
+
+    <!-- <script>
+      function prom(complate) {
+        return new Promise(function (resolve, reject) {
+          console.log("Fetching data , please wait");
+          setTimeout(() => {
+            if (complate) {
+              resolve("im done !");
+            } else {
+              reject("im not done !!");
+            }
+          }, 5000);
+        });
+      }
+
+      prom(false)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script> -->
+     <script>
+      function prom(a,b) {
+        return new Promise(function (resolve, reject) {
+          console.log("Fetching data , please wait");
+          let c = a/b
+          setTimeout(() => {
+            if (a,b) {
+              resolve(`your ans is ${c}`);
+            } else {
+              reject("failed");
+            }
+          }, 1000);
+        });
+      }
+
+      prom(10,0)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html> 
