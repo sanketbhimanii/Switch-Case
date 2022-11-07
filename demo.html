@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function data() {
+        const response = await fetch(
+          "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+        );
+
+        const iteams = response.json();
+        return iteams;
+      }
+      data()
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script>
+
+    <script>
+    let myPromise=new Promise (function(myResolve,myReject){
+        fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json")
+        console.log("fetching some data...")
+        myResolve("sucessfull");
+        myReject("error");
+    })
+    myPromise.then((result)=>{
+    console.log(result)
+    })
+    .catch((error) => {
+          console.log(error);
+        });
+        
+  
+    </script>
+  </body>
+</html>

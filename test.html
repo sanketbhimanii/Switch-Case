@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const value = [2, 1, 2, 3, 3, 4];
+       const n = value.length;
+      const result = value.length / 2;
+      const val01 = [];
+      const val02 = [];
+      console.log(val01 + "\n" + val02);
+
+      function abc(value, n) {
+        let print = Array.from({ length: n }, (_, i) => false);
+        for (let i = 0; i < n; i++) {
+          if (print[i] == true) continue;
+          else {
+            if (val01.length < n / 2){
+            val01.push(value[i]);
+           
+            } 
+            
+            else {
+              val02.push(value[i]);
+            }
+          }
+        
+      
+        let count = 1;
+      for (let j = i + 1; j < n; j++) {
+        if (value[i] == value[j]) {
+          print[j] = true;
+          count++;
+        }
+      }
+      if (count == 2) {
+        // console.log(arr[i] + " you are twice");
+        if (!val01.includes(value[i])) {
+          val01.push(value[i]);
+        }
+        if (!val02.includes(value[i])) {
+          val02.push(value[i]);
+        }
+      } else if (count > 2) {
+        console.log("Empty");
+        break;
+      }
+    }
+     console.log("Array is: "+value + "\narray 1 is: " + val01 + "\narray 2 is: " + val02);
+  }
+     abc(value, n);
+      
+  </script>
+</body>
+</html>
+  
+  
+    
