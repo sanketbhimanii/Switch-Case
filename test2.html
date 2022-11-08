@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let inputsArr = [2, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 7];
+      // first checking the inputs occurrence time
+      let objData = {};
+      let counter = 0;
+      for (let i = 0; i < inputsArr.length; i++) {
+        for (let j = 0; j < inputsArr.length; j++) {
+          if (inputsArr[i] == inputsArr[j]) {
+            counter++;
+            objData[inputsArr[i]] = counter;
+          }
+        }
+        counter = 0;
+      }
+      let finalArr = [[], []]; //first and second array with final array is default
+      for (const iVal of Object.keys(objData)) {
+        const iThTimes = objData[iVal];
+        if (iThTimes == 1) {
+          finalArr[0].push(iVal);
+        } else if (iThTimes > 2) {
+          for (let i = 0; i < iThTimes; i++) {
+            if (i > 1) {
+              finalArr.push(new Array(iVal));
+            }
+            else{
+                finalArr[0].push(iVal);
+                finalArr[1].push(iVal);
+                i++;
+
+            }
+          }
+        } else {
+          finalArr[0].push(iVal);
+          finalArr[1].push(iVal);
+          
+        }
+      }
+      console.log(finalArr);
+    </script>
+  </body>
+</html>
